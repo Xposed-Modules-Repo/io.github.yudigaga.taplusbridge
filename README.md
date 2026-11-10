@@ -41,3 +41,11 @@
 
 - [源码](https://github.com/yudigaga/TaplusBridge)
 - [问题反馈](https://github.com/yudigaga/TaplusBridge/issues)
+
+## 赞助
+
+如果喜欢这个项目，欢迎请我喝杯咖啡 ☕
+
+<a href="https://raw.githubusercontent.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/main/docs/assets/wechat-sponsor.png">
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/main/docs/assets/wechat-sponsor.png" alt="微信赞赏码" width="360" />
+</a>
