@@ -1,8 +1,8 @@
 # taplusbridge
 
-传送门 4.1.3 / 40013、5.1.5 / 50015 的 libxposed API 102 模块。当前正式版：**0.15.50 / 82**。
+传送门 4.1.3 / 40013、5.1.5 / 50015 的 libxposed API 102 模块。当前正式版：**0.15.51 / 83**。
 
-[下载最新版](https://github.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/releases/latest) · [使用指南](https://github.com/yudigaga/TaplusBridge/blob/main/docs/usage.md) · [本次更新](https://github.com/yudigaga/TaplusBridge/blob/main/docs/release-notes-0.15.50-release.md)
+[下载最新版](https://github.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/releases/latest) · [使用指南](https://github.com/yudigaga/TaplusBridge/blob/main/docs/usage.md) · [本次更新](https://github.com/yudigaga/TaplusBridge/blob/main/docs/release-notes-0.15.51-release.md)
 
 ## 功能
 
@@ -24,9 +24,9 @@
 
 ## 本次更新
 
-0.15.50 合并远端 0.15.43 之后的弹层／社交页面取链、来源菜单协调、浏览器与工具条、Assist 描述回退和分享缓存修正。已有有效链接时及时执行拖动动作，保留 OCR、分词与三个手势阶段的必要等待。
+0.15.51 修正本轮新弹窗的关闭阶段：仅在模块长按识别或后续拖动阶段到达后才按原安全检查关闭；系统原生长按阶段、提前松手和长按前已有窗口保留。输入派发或后台处理延迟不再被计为额外持按，三段配置时间不变。
 
-本地记录包含 1,634 项 Android 单测通过；发布前 Gradle 核对测试与正式包为最新，Python 两组共 73 项通过，lint 0 错误、33 条警告，长期 v2 签名和 16 KiB 对齐通过。详见[构建与发布核验](https://github.com/yudigaga/TaplusBridge/blob/main/docs/2026-11-13-release-0.15.50.md)。
+本地完整 Android 单测记录为 1,643 项通过；发布前复核当前源码与构建，Python 两组共 73 项通过，lint 0 错误、33 条警告，长期 v2 签名和 16 KiB 对齐通过。详见[构建与发布核验](https://github.com/yudigaga/TaplusBridge/blob/main/docs/2026-11-14-release-0.15.51.md)。实际 ROM 弹窗回调与关闭效果仍需手机验收。
 
 ## 项目文档
 
