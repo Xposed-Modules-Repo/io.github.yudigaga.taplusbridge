@@ -1,8 +1,8 @@
 # taplusbridge
 
-传送门 4.1.3 / 40013、5.1.5 / 50015 的 libxposed API 102 模块。当前正式版：**0.15.51 / 83**。
+传送门 4.1.3 / 40013、5.1.5 / 50015 的 libxposed API 102 模块。当前正式版：**0.15.53 / 85**。
 
-[下载最新版](https://github.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/releases/latest) · [使用指南](https://github.com/yudigaga/TaplusBridge/blob/main/docs/usage.md) · [本次更新](https://github.com/yudigaga/TaplusBridge/blob/main/docs/release-notes-0.15.51-release.md)
+[下载最新版](https://github.com/Xposed-Modules-Repo/io.github.yudigaga.taplusbridge/releases/latest) · [使用指南](https://github.com/yudigaga/TaplusBridge/blob/main/docs/usage.md) · [本次更新](https://github.com/yudigaga/TaplusBridge/blob/main/docs/release-notes-0.15.53-release.md)
 
 ## 功能
 
@@ -24,9 +24,9 @@
 
 ## 本次更新
 
-0.15.51 修正本轮新弹窗的关闭阶段：仅在模块长按识别或后续拖动阶段到达后才按原安全检查关闭；系统原生长按阶段、提前松手和长按前已有窗口保留。输入派发或后台处理延迟不再被计为额外持按，三段配置时间不变。
+0.15.53 等待同一次手势的有效抬手，持按达到识别阈值后才尝试关闭本轮来源菜单。系统确认来源应用正在录音时，会跳过宿主首次识别呈现和长按拖动准备及交接。
 
-本地完整 Android 单测记录为 1,643 项通过；发布前复核当前源码与构建，Python 两组共 73 项通过，lint 0 错误、33 条警告，长期 v2 签名和 16 KiB 对齐通过。详见[构建与发布核验](https://github.com/yudigaga/TaplusBridge/blob/main/docs/2026-11-14-release-0.15.51.md)。实际 ROM 弹窗回调与关闭效果仍需手机验收。
+归档验证包含 1,957 项 Android 单测和 73 项 Python 测试，Release lint 为 0 错误、32 条警告。发布前复核了长期 v2 签名和 16 KiB 对齐。真实录音及 ROM 手势仍需设备验收。[构建与发布核验](https://github.com/yudigaga/TaplusBridge/blob/main/docs/2026-11-19-release-0.15.53.md)
 
 ## 项目文档
 
